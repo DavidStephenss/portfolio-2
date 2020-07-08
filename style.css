@@ -35,7 +35,7 @@
 }
 
 .top {
-  background-image: url(https://media.giphy.com/media/l4FGDAx6u3hthMhgI/giphy.gif);
+  background-image: url(https://media.giphy.com/media/l4FGweSrz2B3mSHw4/giphy.gif);
   background-size: cover;
   display:flex;
   margin: 0;
@@ -54,8 +54,15 @@
   
   .title {
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 0px;
+  }
+
+  .title.top{
+    display: flex;
+    font-size: large;
+    align-self: center;
+
   }
   
   footer {
@@ -73,6 +80,10 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+  }
+
+  i:hover{
+    color:red;
   }
 
 @media (min-width: 900px) {
