@@ -1,77 +1,116 @@
-body{
+.grid-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: .25fr 1fr .25fr;
-  grid-template-areas: "header"
-                       "item"
-                       "footer";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: .25fr .5fr 2fr 1fr .25fr;
+  grid-template-areas:  "header header"
+                        "div-one div-one"
+                        "div-two div-three"
+                        "div-two div-three"
+                        "footer footer";
 }
 
-header{
-  grid-area: header;
-}
-
-.gallery-wrap {
-  grid-area: item;
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  height: 75vh;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.item {
-  flex: 1;
-  /* height: 100%; */
-  background-position: center;
+body {
+  background-image: url(/images/backgroundresume.jpeg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-repeat: none;
-  transition: flex 3s ease;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.item:hover{
-    flex: 4;
+header {
+  grid-area: header;
+  background-color: #202E3E;
 }
 
-.item-1 { 
-  background-image: url('/images/pictureone.jpeg');
+.headshot {
+  height:200px;
+  width:200px;
 }
 
-.item-2 { 
-  background-image: url('/images/picturetwo.jpeg');
+.div-one {
+  grid-area: div-one;
+  text-align: center;
+  font-size: small;
 }
 
-.item-3 { 
-  background-image: url('/images/photothree.jpeg');
+h1 {
+  text-align: center;
 }
 
-.item-4 { 
-  background-image: url('/images/photofour.jpeg');
+.div-two {
+  grid-area: div-two;
+  margin-left: 150px;
+  text-align: left;
+  margin-left: 40%;
+ padding-right: 30px;
+ background-color: white;
+ margin-bottom: 40%;
 }
 
-.item-5 { 
-  background-image: url('/images/photofive.jpeg');
+.div-three {
+  grid-area: div-three;
+  margin-right: 10%;
+  border-left: solid 1px;
+  text-align: left;
+  margin-right: 20%;
+  padding-left: 30px;
+  background-color: white;
+  margin-bottom: 20%;
 }
 
-.item-6 {
-  background-image: url('/images/photosix.jpeg')
-}
-.social{
-  position: absolute;
-  right: 35px;
-  bottom: 0;
+li {
+  font-size: small;
 }
 
-.item-1:hover
-
-img{
-  display: block;
-  width: 32px;
+h2 {
+  font-size: medium;
 }
-
 footer {
   grid-area: footer;
-  margin-top: 50px;
+  background-color: #202E3E;
  text-align: center;
+ margin-top: 20px;
+}
+
+i {
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  i:hover{
+    color:red;
+  }
+
+
+@media (max-width: 600px) {
+  grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr 2fr 0.25fr;
+    grid-template-areas:
+      "header"
+      "div-one"
+      "div-two"
+      "div-three"
+      "footer";
+  }
+  .div-one {
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: auto;
+  }
+
+  .div-two {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .div-three {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }

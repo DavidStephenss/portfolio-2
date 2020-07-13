@@ -7,10 +7,12 @@
                        "me"
                       "paragraph"   
                       "footer";
+  font-family: 'Open Sans Condensed', sans-serif;
   }  
 
 .myHeader {
   grid-area: myHeader;
+  background-color: #202E3E;
 }
 
 .picture-of-me {
@@ -20,6 +22,20 @@
   border-radius: 50%;    
   margin: 15% auto;
   align-content: center;
+}
+
+.navbar{
+  background-color: #202E3E;
+}
+
+.nav-link{
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.navbar-brand{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
 }
 
 .me {
@@ -34,6 +50,10 @@
   /* margin-top: 120px; */
 }
 
+h2 {
+color: #38433A;
+}
+
 .top {
   background-image: url(https://media.giphy.com/media/l4FGweSrz2B3mSHw4/giphy.gif);
   background-size: cover;
@@ -41,14 +61,14 @@
   margin: 0;
   position: relative;
   width: 100%;
-  background-color: #AAA;
+  background-color: #202E3E;
   height: 100%;
   opacity: 1;
   text-align: center;
-  font-family: "helvetica";
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 80px;
   font-weight: 100;
-  color: #FFF;
+  color: #202E3E;
   text-align: center;
   }
   
@@ -62,12 +82,13 @@
     display: flex;
     font-size: large;
     align-self: center;
+    background-color: #202E3E;
 
   }
   
   footer {
     grid-area: footer;
-    background-color: purple;
+    background-color: #202E3E;
    text-align: center;
    margin-top: 20px;
   }
@@ -83,7 +104,7 @@
   }
 
   i:hover{
-    color:red;
+    color: #38433A;
   }
 
 @media (min-width: 900px) {
