@@ -90,7 +90,7 @@ i {
   grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr 2fr 2fr 0.25fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr 0.25fr;
     grid-template-areas:
       "header"
       "div-one"

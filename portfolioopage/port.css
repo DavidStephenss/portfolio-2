@@ -9,6 +9,7 @@ body{
 
 header{
   grid-area: header;
+  background-color: #202E3E;
 }
 
 .gallery-wrap {

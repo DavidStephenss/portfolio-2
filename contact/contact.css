@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  color: #b17049;
+  color: #38433A;
   text-align: center;
   font-size: 50px;
 }
@@ -28,6 +28,7 @@ h2 {
 
 .myHeader {
   grid-area: header;
+  background-color: #202E3E;
   /* background-color: aqua; */
 }
 
@@ -59,7 +60,7 @@ footer {
   grid-area: footer;
   text-align: center;
   margin-bottom: 30px;
-  background-color: #202E3E;
+  background-color: white;
   /* background-color: darkgreen; */
 }
 
@@ -101,7 +102,7 @@ button:focus {
 
 i {
   font-size: 25px;
-  color: #78342c;
+  color: #202E3E;
   margin-right: 20px;
   margin-left: 20px;
 }
